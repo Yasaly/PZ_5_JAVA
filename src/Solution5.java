@@ -30,7 +30,7 @@ public class Solution5 {
                 new Integration_Scheme_Interval(
                         Integration_Scheme.Integration_Scheme_Type.Gauss2);
 
-        printTableForScheme("Гаусс-2:", gauss2, Begin, End, phi, I_true,
+        analyzeScheme("Гаусс-2:", gauss2, Begin, End, phi, I_true,
                 N, N2, N4, N8, h, h2, h4, 4);
 
 
@@ -38,11 +38,11 @@ public class Solution5 {
                 new Integration_Scheme_Interval(
                         Integration_Scheme.Integration_Scheme_Type.Trapezoid);
 
-        printTableForScheme("метод трапеции:", trapezoid, Begin, End, phi, I_true,
+        analyzeScheme("метод трапеции:", trapezoid, Begin, End, phi, I_true,
                 N, N2, N4, N8, h, h2, h4, 2);
     }
 
-    private static void printTableForScheme(
+    private static void analyzeScheme(
             String name,
             Integration_Scheme_Interval scheme,
             Point Begin,
