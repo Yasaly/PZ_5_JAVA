@@ -91,24 +91,24 @@ public class Solution5 {
                 "    (I*-Ih)/(I*-Ih2)",
                 "(Ih2-Ih)/(2^k-1)",
                 "IR",
-                "I* - IR"
+                "    I* - IR"
         );
 
         //h
         System.out.printf(
-                "%10.6e\t%18.12e\t%18.12e\t%18.12e\t%18.12e\t%18.12e%n",
+                "%10.6e\t%18.12e\t%18.12e\t%18.12e\t%18.16e\t%18.12e%n",
                 h, Eh,  ratio1, corr1, IR1, ER1
         );
 
         //h/2
         System.out.printf(
-                "%10.6e\t%18.12e\t%18.12e\t%18.12e\t%18.12e\t%18.12e%n",
+                "%10.6e\t%18.12e\t%18.12e\t%18.12e\t%18.16e\t%18.12e%n",
                 h2, Eh2, ratio2, corr2, IR2, ER2
         );
 
         //h/4
         System.out.printf(
-                "%10.6e\t%18.12e\t%18.12e\t%18.12e\t%18.12e\t%18.12e%n",
+                "%10.6e\t%18.12e\t%18.12e\t%18.12e\t%18.16e\t%18.12e%n",
                 h4, Eh4, ratio3, corr3, IR3, ER3
         );
         System.out.println();
